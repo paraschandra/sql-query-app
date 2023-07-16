@@ -6,7 +6,7 @@ export const ListItems = ({ query, setCurrentQuery, toggle, setToggle}) => {
         <div className="flex justify-start items-center border-b-2 w-full h-18 p-4 cursor-pointer hover:scale-105 hover:shadow-lg"
             onClick={() => {
                 setCurrentQuery(query);
-                if(toggle == "open") {
+                if(toggle === "open") {
                     setToggle("closed");
                 }
             }}>

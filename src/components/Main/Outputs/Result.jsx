@@ -3,7 +3,7 @@ import React from 'react'
 export const Result = ({result}) => {
   return (
     <>
-        <table className='my-2 md:my-10 h-full w-full text-center text-xs sm:text-base border-3
+        <table className='my-2 md:my-4 h-full w-full text-center text-xs sm:text-base border-3
             shadow-md border-gray-100 overflow-x-auto border-collapse'>
             <thead>
                 <tr className="bg-gray-200 text-gray-600">

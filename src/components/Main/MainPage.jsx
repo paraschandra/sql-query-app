@@ -31,11 +31,11 @@ export const MainPage = ({toggle, setToggle}) => {
                 <Queries queries = {queryData} setCurrentQuery = {setCurrentQuery} toggle = {toggle} setToggle = {setToggle}/>
                 <div className={`flex flex-col h-full ${(toggle === "open")?("w-0"):("w-full")}`}>
                     <div className="flex flex-row justify-start h-14 w-full border-b-2">
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    <div className="flex h-full w-36 px-4 py-2 mx-1 justify-center items-center border-x-2 border-t-2 rounded-t-lg
                     cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayOverview}>
                         Overview
                     </div>
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    <div className="flex h-full w-36 px-4 py-2 mr-1 justify-center items-center border-x-2 border-t-2 rounded-t-lg
                     cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayQuery}>
                         Query
                     </div>
@@ -47,7 +47,7 @@ export const MainPage = ({toggle, setToggle}) => {
                         setCurrentQuery = {setCurrentQuery}
                         setResult = {setResult}
                     />
-                    <h2 className='text-xl font-semibold my-4 mx-12 max-md:mx-2 max-md:mb-1'>
+                    <h2 className='text-xl font-semibold my-4 mx-12 max-md:mx-2'>
                         Output:
                     </h2>
                     <Output result = {result}/>
@@ -57,14 +57,14 @@ export const MainPage = ({toggle, setToggle}) => {
             :
             (
             <div className="flex flex-row h-full relative w-full mt-1">
-                <Columns/>
-                <div className="flex flex-col h-full w-full">
+                <Columns toggle  = {toggle}/>
+                <div className={`flex flex-col h-full ${(toggle === "open")?("w-0"):("w-full")}`}>
                 <div className="flex flex-row justify-start h-14 w-full border-b-2">
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    <div className="flex h-full w-36 px-4 py-2 mx-1 justify-center items-center border-x-2 border-t-2 rounded-t-lg
                     cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayOverview}>
                     Overview
                     </div>
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    <div className="flex h-full w-36 px-4 py-2 mr-1 justify-center items-center border-x-2 border-t-2 rounded-t-lg
                     cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayQuery}>
                     Query
                     </div>

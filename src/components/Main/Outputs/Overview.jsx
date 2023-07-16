@@ -6,8 +6,8 @@ export const Overview = () => {
   const overview = data[0].result;
 
   return (
-    <div className='flex flex-col justify-start w-full px-12 py-4 max-md:px-2 overflow-auto'>
-        <table className='sm:my-2 my-10 h-full w-full text-center text-xs sm:text-base border-3
+    <div className="flex flex-col justify-start w-full px-12 max-md:px-2 overflow-auto">
+        <table className='sm:my-2 my-4 h-full w-full text-center text-xs sm:text-base border-3
             shadow-md border-gray-100 overflow-x-auto border-collapse'>
             <thead>
                 <tr className="bg-gray-200 text-gray-600">
