@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Columns } from "./Sidebar/Columns";
 import {Queries} from "./Sidebar/Queries/Queries";
 import {InputForm} from "./Input/InputForm";
-import {Output} from "../Output/Output";
-import { Overview } from "../Output/Overview";
+import {Output} from "./Outputs/Output";
+import { Overview } from "./Outputs/Overview";
 
 import {queries} from "../../data";
 
