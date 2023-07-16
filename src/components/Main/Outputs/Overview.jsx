@@ -10,7 +10,7 @@ export const Overview = () => {
         <table className='sm:my-2 my-10 h-full w-full text-center text-xs sm:text-base border-3
             shadow-md border-gray-100 overflow-x-auto border-collapse'>
             <thead>
-                <tr className="bg-white text-gray-600">
+                <tr className="bg-gray-200 text-gray-600">
                     <th className="px-4 py-2 border-2 border-gray-100 text-sm font-medium">
                         Order ID
                     </th>

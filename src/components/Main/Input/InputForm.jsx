@@ -25,14 +25,19 @@ export const InputForm = ({ queryData, setQueryData, currentQuery, setCurrentQue
   };
 
   return (
-    <div className='flex flex-col justify-center items-center h-60 w-full max-md:px-2 px-12 border-b border-gray-200'>
+    <div className='flex flex-col justify-center items-center h-60 w-full md:px-12 px-2 border-b border-gray-200'>
         <div className='flex justify-start w-full h-8'>
-            <h2 className='text-xl font-semibold'>Execute Query:</h2>
+            <h2 className='text-xl font-semibold'>
+              Execute Query:
+            </h2>
         </div>
-        <div className='flex flex-row h-16 w-full my-6'>
-            <form className='flex flex-row h-16 w-full'>
-                <input ref={inputRef} type='text' className='w-4/5 px-3 border-2 border-gray-600 text-lg font-medium'/>
-                <button className='h-18 w-1/6 ml-4 border-2 border-gray-600 bg-green-600 text-white text-xl font-semibold'
+
+        <div className='flex flex-row h-40 md:h-16 w-full my-6'>
+            <form className='flex flex-col md:flex-row justify-between h-40 md:h-16 w-full'>
+                <input ref={inputRef} type='text' placeholder='Enter or select a query to run...'
+                className='w-full h-20 md:h-16 px-3 border-2 border-gray-600 text-lg font-medium'/>
+
+                <button className='h-16 md:h-18 w-2/5 md:w-1/6 md:ml-4 border-2 border-gray-600 bg-green-600 text-white text-xl font-semibold'
                 onClick={handleQuery}>
                   Run
                 </button>

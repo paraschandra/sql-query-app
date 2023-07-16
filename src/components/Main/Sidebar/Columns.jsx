@@ -7,7 +7,7 @@ export const Columns = () => {
   console.log(data[0].result);
   
   return (
-    <div className="flex flex-col w-1/4 md:sticky overflow-auto px-0 h-full top-0 border-r border-gray-200">
+    <div className="flex flex-col w-1/4 overflow-auto px-0 h-full top-0 border-r border-gray-200 max-md:hidden">
         <div className='w-full p-4 h-18'>
             <h2 className='text-xl font-semibold'>
                 Columns <span>({columns.length}):</span>

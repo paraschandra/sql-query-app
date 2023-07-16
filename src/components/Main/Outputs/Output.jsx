@@ -3,7 +3,7 @@ import { Result } from './Result'
 
 export const Output = ({result}) => {
   return (
-    <div className='flex flex-col justify-start w-full px-12 py-4 max-md:px-2 overflow-auto'>
+    <div className='flex flex-col justify-start w-full px-12 py-2 max-md:px-2 overflow-auto'>
       {result?(
         <div><Result result = {result}/></div>
       ):(

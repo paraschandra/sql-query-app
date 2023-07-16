@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
+
 import { Columns } from "./Sidebar/Columns";
+import { Overview } from "./Outputs/Overview";
+
 import {Queries} from "./Sidebar/Queries/Queries";
 import {InputForm} from "./Input/InputForm";
 import {Output} from "./Outputs/Output";
-import { Overview } from "./Outputs/Overview";
 
 import {queries} from "../../data";
 
-export const MainPage = () => {
+export const MainPage = ({toggle, setToggle}) => {
     const [queryData, setQueryData] = useState(queries);
-    const [currentQuery, setCurrentQuery] = useState("Enter or select query to run...");
+    const [currentQuery, setCurrentQuery] = useState(null);
     const [result, setResult] = useState();
     const [page, setPage] = useState("Overview");
 
@@ -23,16 +25,18 @@ export const MainPage = () => {
 
     return (
         <>
-            {(page === "Query")?
+            {(page === "Query") ?
             (
             <div className="flex flex-row h-full relative w-full mt-1">
-                <Queries queries = {queryData} setCurrentQuery = {setCurrentQuery}/>
-                <div className="flex flex-col h-full w-full ">
+                <Queries queries = {queryData} setCurrentQuery = {setCurrentQuery} toggle = {toggle} setToggle = {setToggle}/>
+                <div className={`flex flex-col h-full ${(toggle === "open")?("w-0"):("w-full")}`}>
                     <div className="flex flex-row justify-start h-14 w-full border-b-2">
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2 cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayOverview}>
+                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayOverview}>
                         Overview
                     </div>
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2 cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayQuery}>
+                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayQuery}>
                         Query
                     </div>
                     </div>
@@ -56,10 +60,12 @@ export const MainPage = () => {
                 <Columns/>
                 <div className="flex flex-col h-full w-full">
                 <div className="flex flex-row justify-start h-14 w-full border-b-2">
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2 cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayOverview}>
+                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayOverview}>
                     Overview
                     </div>
-                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2 cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayQuery}>
+                    <div className="flex h-full w-36 px-4 py-2 mx-2 justify-center items-center border-x-2
+                    cursor-pointer hover:scale-105 font-semibold text-blue-600" onClick={displayQuery}>
                     Query
                     </div>
                 </div>
