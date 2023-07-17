@@ -13,8 +13,8 @@ The application is deployed at : **https://sql-query-app-atlan.netlify.app/**
 
 ## Technologies Used:
 
-**1. Frameworks :** React JS and Tailwind CSS
-**2. Packages :** React Icons
+1. **Frameworks :** React JS and Tailwind CSS.
+2. **Packages :** React Icons
 
 ## Performance Audit:
 
