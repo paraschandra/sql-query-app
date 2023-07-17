@@ -3,7 +3,7 @@
 This is a web-based application to run SQL queries on given data built specifically for the Atlan's frontend internship task.
 The application is deployed at : **https://sql-query-app-atlan.netlify.app/**
 
-## Features:
+## Features
 
 - Tabs to toggle between Overview and Query page.
 - Overview of table data and columns.
@@ -11,21 +11,28 @@ The application is deployed at : **https://sql-query-app-atlan.netlify.app/**
 - A sidebar with a list of predefined queries, which can be run by selecting one.
 - Responsive for multiple screen sizes.
 
-## Technologies Used:
+## Technologies Used
 
 1. **Frameworks :** React JS and Tailwind CSS.
 2. **Packages :** React Icons
 
-## Performance Audit:
+## Performance Audit
 
 - **[web.dev](https://web.dev/measure)**: Load time according to web.dev is **1.2 seconds**. The site scored **100 points in performance** and **100 points in best practices**.
 - **[GTmetrix](https://gtmetrix.com/)**: Fully loaded time is **0.5 seconds**, with first contentful paint at **0.4 seconds**. Site received an A grade also. The exact metrics are:
-    - **First Contentful Paint**: `0.4s`
     - **Speed Index**: `1.0s`
+    - **First Contentful Paint**: `0.4s`
     - **Largest Contentful Paint**: `0.4s`
     - **Time to Interactive**: `0.4s`
     - **Total Blocking Time**: `0ms`
     - **Cumulative Layout Shift**: `0`
+
+## Optimizations
+> Zero to no use of extra packages to make application lightweight.
+> Used Tailwind CSS to purge all unused css in production leading to increase in performance.
+
+## Screenshots
+<img scr="public\Screenshot (182).png">
 
 ## Available Scripts
 
