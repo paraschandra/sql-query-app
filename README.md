@@ -1,6 +1,6 @@
 # SQL Query App - Atlan Frontend Task
 
-This is a web-based application to run SQL queries on given data built specifically for the Atlan's frontend internship task.
+This is a web-based application to run SQL queries on given data built specifically for the Atlan's frontend internship task.<br>
 The application is deployed at : **https://sql-query-app-atlan.netlify.app/**
 
 ## Features
