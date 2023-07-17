@@ -28,11 +28,8 @@ The application is deployed at : **https://sql-query-app-atlan.netlify.app/**
     - **Cumulative Layout Shift**: `0`
 
 ## Optimizations
-> Zero to no use of extra packages to make application lightweight.
+> Zero to no use of extra packages to make application lightweight. <br>
 > Used Tailwind CSS to purge all unused css in production leading to increase in performance.
-
-## Screenshots
-<img scr="public\Screenshot (182).png">
 
 ## Available Scripts
 
