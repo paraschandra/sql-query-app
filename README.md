@@ -13,7 +13,19 @@ The application is deployed at : **https://sql-query-app-atlan.netlify.app/**
 
 ## Technologies Used:
 
-**1. Framework :** React JS
+**1. Frameworks :** React JS and Tailwind CSS
+**2. Packages :** React Icons
+
+## Performance Audit:
+
+- **[web.dev](https://web.dev/measure)**: Load time according to web.dev is **1.2 seconds**. The site scored **100 points in performance** and **100 points in best practices**.
+- **[GTmetrix](https://gtmetrix.com/)**: Fully loaded time is **0.5 seconds**, with first contentful paint at **0.4 seconds**. Site received an A grade also. The exact metrics are:
+    - **First Contentful Paint**: `0.4s`
+    - **Speed Index**: `1.0s`
+    - **Largest Contentful Paint**: `0.4s`
+    - **Time to Interactive**: `0.4s`
+    - **Total Blocking Time**: `0ms`
+    - **Cumulative Layout Shift**: `0`
 
 ## Available Scripts
 
